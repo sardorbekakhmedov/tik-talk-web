@@ -1,32 +1,36 @@
-<div class="profile-card">
+@if(profile) {
+  <div class="profile-card">
     <div class="avatar-name">
-        <img src="/assets/imgs/rayan.png" alt="avatar" class="profile-card__avatar">
+      <img src="/assets/imgs/rayan.png" alt="avatar" class="profile-card__avatar">
 
-        <div class="profile-card__name">
-            <strong>Rayan Gosling</strong>
-            <span>rayan</span>
-        </div>
+      <div class="profile-card__name">
+        <strong class="h6" >Rayan Gosling</strong>
+        <span class="subtitle" >rayan</span>
+      </div>
     </div>
 
     <div class="profile-card__description">
-        Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry. Lorem 
-        Ipsum has been the industry's standard
+      Lorem Ipsum is simply dummy text of the
+      printing and typesetting industry. Lorem
+      Ipsum has been the industry's standard
     </div>
 
     <div class="profile-card__tags">
-        <div class="skill-tag">
-            Angular
-        </div>
-          <div class="skill-tag">
-            Dotnet
-        </div>
+      <div class="skill-tag">
+        Angular
+      </div>
+      <div class="skill-tag">
+        Dotnet
+      </div>
 
-        
+
     </div>
 
     <div class="profile-card__action-btns">
-        <button class="btn">Subscribe</button>
+      <button class="btn">Subscribe</button>
     </div>
 
-</div>
+  </div>
+} @else {
+  <h1>Not profile</h1>
+}
